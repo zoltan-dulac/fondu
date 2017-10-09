@@ -33,7 +33,9 @@ $ make
 # make install
 ```
 
-If you want this to run under Windows, I suggest compiling using [Cygwin](http://cygwin.org).  
+If you want this to run under Windows, I suggest compiling using [Cygwin](http://cygwin.org).
+
+If you are running OSX, you may just want to use [Macports] or [Homebrew] to install using the commands `port install fondu` or `brew install fondu`, respectively.
 
 ### <a name="Fondu">Fondu</a>
 
