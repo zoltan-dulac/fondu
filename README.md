@@ -33,6 +33,7 @@ $ make
 # make install
 ```
 
+If you want this to run under Windows, I suggest compiling using [Cygwin](http://cygwin.org).  
 
 ### <a name="Fondu">Fondu</a>
 
