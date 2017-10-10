@@ -41,8 +41,9 @@ If you are running OSX, you may just want to use [Macports] or [Homebrew] to ins
 
 ### <a name="Fondu">Fondu</a>
 
-> <pre>fondu [-force] [-inquire] [-show] [-latin1] [-afm] [-trackps] macfile(s)
-> </pre>
+```
+fondu [-force] [-inquire] [-show] [-latin1] [-afm] [-trackps] macfile(s)
+```
 
 Fondu will read a series of mac files, check their resource forks and extract all font related items into seperate files.
 
@@ -70,8 +71,9 @@ You may answer with either 'y', 'n', or '=newfilename' (or 'q' for quit, or 'a' 
 
 ### <a name="Ufond">Ufond</a>
 
-> <pre>ufond [-dfont] [-macbin] [-res] [-script name] fontfiles ...
-> </pre>
+```
+ufond [-dfont] [-macbin] [-res] [-script name] fontfiles ...
+```
 
 Ufond is the reverse of Fondu, it takes unix font files and wraps them up into a mac resource and creates a family for them which in turn get wrapped up in a macbinary or binhex file.
 
@@ -89,38 +91,43 @@ Caveat: Mac OS/X no longer supports NFNT resources, if you want a usable bitmap 
 
 According to Apple's docs OS/X does not support the FOND resource either, this should imply that Type1 resource fonts don't work either. They do however, but presumably that support will fade away.
 
-### L<a name="lumper">umper</a>
+### <a name="lumper">Lumper</a>
 
-> <pre>lumper font1.dfont font2.dfont font3.dfont
-> </pre>
+```
+lumper font1.dfont font2.dfont font3.dfont
+```
 
 Merges any font resources ('NFNT', 'sfnt', 'FOND') from font2 (and font3 and ...) into font1.dfont.
 
 ### <a name="Dfont2Res">Dfont2Res</a>
 
-> <pre>dfont2res font.dfont
-> </pre>
+```
+dfont2res font.dfont
+```
 
 Will convert a font from the new macintosh dfont format to the old resource fork format.
 
 ### <a name="tobin">Tobin</a>
 
-> <pre>tobin [-creator 4char-string] [-type 4char-string] [-res rfork] dfork-filename
-> </pre>
+```
+tobin [-creator 4char-string] [-type 4char-string] [-res rfork] dfork-filename
+```
 
 Will wrap up a series of files into a macbinary wrapper. On the mac it will read the resource fork and create/type info from the dfork-filename. On non-mac systems these must all be specified seperately.
 
 ### <a name="frombin">Frombin</a>
 
-> <pre>frombin mac-binary-files
-> </pre>
+```
+frombin mac-binary-files
+```
 
 Will unwrap a macbinary file. On the mac it creates the obvious file, with the attributes of the original. On non-mac systems it creates three files, one for the data-fork, one for the resource-fork and one containing random info about the file.
 
 ### <a name="Showfond">Showfond</a>
 
-> <pre>showfond fontfile
-> </pre>
+```
+showfond fontfile
+```
 
 Will dump some information about the macintosh font resources (FOND, NFNT, sfnt) found in the file.
 
