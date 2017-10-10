@@ -1,5 +1,7 @@
 # fondu
-A clone of the official CVS repo at http://sourceforge.net/cvs/?group_id=39411 , since it seems like it may be inactive and I wanted to add some updates.  The original developer is George Williams, the creator of FontForge.  The following information is taken from the original SourceForge project page at http://sourceforge.net/projects/fondu.
+A clone of the official CVS repo at http://sourceforge.net/cvs/?group_id=39411 , since it seems like it may be inactive and I wanted to add some updates.  
+
+The original developer is George Williams, the creator of FontForge.  The following information is taken from the original SourceForge project page at http://sourceforge.net/projects/fondu and was written by him as well (with some small updates by Zoltan Hawryluk).  All instances of "I", "me", "myself" and "my", therefore, refer to George Williams.
 
 Fondu is a set of programs to interconvert between mac font formats and pfb, ttf, otf and bdf files on unix.
 
